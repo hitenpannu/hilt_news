@@ -1,9 +1,6 @@
 include ':base'
 include ':app'
 
-include ':news:news_domain',
-        ':news:news_ui'
-
 include ':core:network', ':core:domain'
 
 rootProject.name = "NewsApplication"

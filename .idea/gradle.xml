@@ -16,9 +16,6 @@
             <option value="$PROJECT_DIR$/core" />
             <option value="$PROJECT_DIR$/core/domain" />
             <option value="$PROJECT_DIR$/core/network" />
-            <option value="$PROJECT_DIR$/news" />
-            <option value="$PROJECT_DIR$/news/news_domain" />
-            <option value="$PROJECT_DIR$/news/news_ui" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
