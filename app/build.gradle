@@ -37,6 +37,8 @@ dependencies {
     implementation androidx.constraintLayout
 
     implementation project(":base")
+    implementation project(":feature-news-ui")
+
     testImplementation test.junit
     androidTestImplementation test.junitExtentions
     androidTestImplementation test.espresso
