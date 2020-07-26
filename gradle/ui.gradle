@@ -1,4 +1,4 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply from: "../gradle/libraries.gradle"
@@ -8,13 +8,13 @@ android {
     compileSdkVersion 29
 
     defaultConfig {
-        applicationId "com.hitenderpannu.newsapplication"
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -32,6 +32,10 @@ android {
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
+
+    viewBinding {
+        enabled = true
+    }
 }
 
 dependencies {
@@ -40,19 +44,12 @@ dependencies {
     implementation androidx.core
     implementation androidx.appCompat
     implementation androidx.constraintLayout
-    implementation androidx.constraintLayout
     implementation androidx.recyclerView
-
-    implementation project(":base")
-    implementation project(":feature-news-ui")
-
     implementation androidx.lifecycle
     implementation androidx.liveData
     implementation androidx.lifecycleExtention
-
-    implementation androidx.navigationFragment
-    implementation androidx.navigationUi
-
+    implementation rxjava.core
+    implementation rxjava.android
     testImplementation test.junit
     androidTestImplementation test.junitExtentions
     androidTestImplementation test.espresso
