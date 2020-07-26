@@ -1,0 +1,8 @@
+apply from: "../gradle/ui.gradle"
+
+dependencies {
+    api project(':base')
+    implementation project(':feature-news-entity')
+    implementation project(':feature-news-domain')
+    implementation project(':feature-news-remote')
+}
