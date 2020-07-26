@@ -16,6 +16,10 @@
             <option value="$PROJECT_DIR$/core" />
             <option value="$PROJECT_DIR$/core/domain" />
             <option value="$PROJECT_DIR$/core/network" />
+            <option value="$PROJECT_DIR$/feature-news-domain" />
+            <option value="$PROJECT_DIR$/feature-news-entity" />
+            <option value="$PROJECT_DIR$/feature-news-remote" />
+            <option value="$PROJECT_DIR$/feature-news-ui" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -1,16 +1,30 @@
 ext {
 
     final def daggerVersion = "2.26"
+    final def lifecycleVersion = "2.2.0"
+    final def navVersion = "2.3.0"
+
 
     kotlin = [
-            std: "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+            std: "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
     ]
 
     androidx = [
-            core            : 'androidx.core:core-ktx:1.1.0',
-            appCompat       : 'androidx.appcompat:appcompat:1.1.0',
-            constraintLayout: 'androidx.constraintlayout:constraintlayout:1.1.3',
-            recyclerView    : 'androidx.recyclerview:recyclerview:1.1.0'
+            core              : 'androidx.core:core-ktx:1.1.0',
+            appCompat         : 'androidx.appcompat:appcompat:1.1.0',
+            constraintLayout  : 'androidx.constraintlayout:constraintlayout:1.1.3',
+            recyclerView      : 'androidx.recyclerview:recyclerview:1.1.0',
+            lifecycle         : "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion",
+            liveData          : "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion",
+            lifecycleCompiler : "androidx.lifecycle:lifecycle-compiler:$lifecycleVersion",
+            lifecycleExtention: "android.arch.lifecycle:extensions:$lifecycleVersion",
+            navigationFragment: "androidx.navigation:navigation-fragment-ktx:$navVersion",
+            navigationUi      : "androidx.navigation:navigation-ui-ktx:$navVersion"
+    ]
+
+    rxjava = [
+            core   : 'io.reactivex.rxjava3:rxjava:3.0.0',
+            android: 'io.reactivex.rxjava3:rxandroid:3.0.0'
     ]
 
     test = [
@@ -22,12 +36,13 @@ ext {
     networking = [
             retrofit              : 'com.squareup.retrofit2:retrofit:2.9.0',
             gsonConverter         : 'com.squareup.retrofit2:converter-gson:2.9.0',
+            rxAdapter             : 'com.squareup.retrofit2:adapter-rxjava3:2.9.0',
             httpLoggingInterceptor: 'com.squareup.okhttp3:logging-interceptor:4.0.1'
     ]
 
     dagger = [
-            core     : "com.google.dagger:hilt-android:2.28-alpha",
-            processor: "com.google.dagger:hilt-android-compiler:2.28-alpha"
+            core     : "com.google.dagger:dagger:2.28.3",
+            processor: "com.google.dagger:dagger-compiler:2.28.3",
     ]
 
     log = [

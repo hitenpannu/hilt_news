@@ -4,6 +4,9 @@
     <bytecodeTargetLevel>
       <module name="core_network" target="1.7" />
       <module name="domain" target="1.7" />
+      <module name="feature-news-domain" target="1.7" />
+      <module name="feature-news-entity" target="1.7" />
+      <module name="feature-news-remote" target="1.7" />
       <module name="news-news_domain" target="1.7" />
       <module name="news_domain" target="1.7" />
       <module name="NewsApplication-news_domain" target="1.7" />

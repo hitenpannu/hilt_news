@@ -16,7 +16,7 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
 
-        buildConfigField("String", "BASE_URL", '"http://newsapi.org/v2/"')
+        buildConfigField("String", "BASE_URL", '"http://newsapi.org/"')
         buildConfigField("String", "API_KEY", apiKey)
     }
 
@@ -38,6 +38,7 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     api networking.retrofit
     implementation networking.gsonConverter
+    implementation networking.rxAdapter
     implementation networking.httpLoggingInterceptor
 
     implementation log.timber

@@ -5,8 +5,9 @@ apply from: "../../gradle/libraries.gradle"
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation kotlin.std
+    implementation rxjava.core
     api statemachine.tinder
 }
 
-sourceCompatibility = "1.7"
-targetCompatibility = "1.7"
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"

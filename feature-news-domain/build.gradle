@@ -1,0 +1,6 @@
+apply from: "../gradle/domain.gradle"
+
+dependencies {
+    implementation project(':feature-news-entity')
+    implementation project(':feature-news-remote')
+}

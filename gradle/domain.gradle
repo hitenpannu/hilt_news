@@ -1,0 +1,18 @@
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
+apply from: "../gradle/libraries.gradle"
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation kotlin.std
+    implementation rxjava.core
+    implementation log.timber
+    api project(":core:domain")
+}
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}

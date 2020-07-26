@@ -3,4 +3,9 @@ include ':app'
 
 include ':core:network', ':core:domain'
 
+include 'feature-news-ui',
+        'feature-news-entity',
+        'feature-news-remote',
+        'feature-news-domain'
+
 rootProject.name = "NewsApplication"

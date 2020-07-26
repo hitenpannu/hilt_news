@@ -3,6 +3,7 @@
     package="com.hitenderpannu.newsapplication">
 
     <application
+        android:networkSecurityConfig="@xml/network_security_config"
         android:name="com.hitenderpannu.base.MainApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
